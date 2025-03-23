@@ -1,6 +1,6 @@
 #include <vector>
 
-int fint_smallest_element(std::vector<int> &arr)
+int find_smallest_element(std::vector<int> &arr)
 {
   int smallest_element = arr[0];
   size_t smallest_idx = 0;
@@ -30,7 +30,7 @@ std::vector<int> selection_sort(std::vector<int> arr)
 
   while (!arr.empty())
   {
-    int smallest_idx = fint_smallest_element(arr);
+    int smallest_idx = find_smallest_element(arr);
     sorted_arr.push_back(arr[smallest_idx]);
     arr.erase(arr.begin() + smallest_idx);
   }
